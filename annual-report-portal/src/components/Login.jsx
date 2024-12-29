@@ -32,8 +32,8 @@ const Login = () => {
   
     // Dummy user data
     const dummyUser = {
-      email: "testuser@example.com",
-      password: "password123",
+      email: "arshtiwari@gmail.com",
+      password: "ArshTiwari",
       token: "dummyToken123",
     };
   
@@ -84,9 +84,9 @@ const Login = () => {
             <input
               type="email"
               name="email"
+              placeholder="arshtiwari@gmail.com(for testing)"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter email here"
               className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               required
             />
@@ -98,7 +98,7 @@ const Login = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Enter password here"
+              placeholder="ArshTiwari(for testing)"
               className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
               required
             />
