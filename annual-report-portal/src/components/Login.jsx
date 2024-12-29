@@ -19,41 +19,58 @@ const Login = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+  
     if (!formData.role) {
       setError('Please select a user role.');
       setSuccess('');
-    } else {
-      console.log('Login Data:', formData);
-      // Simulate login success and role handling
+      return;
+    }
+  
+    console.log('Login Data:', formData);
+  
+    // Dummy user data
+    const dummyUser = {
+      email: "testuser@example.com",
+      password: "password123",
+      token: "dummyToken123",
+    };
+  
+    if (
+      formData.email === dummyUser.email &&
+      formData.password === dummyUser.password
+    ) {
       setSuccess('Successfully logged in!');
       setError('');
-    }
-    try {
-      const { email, password,role } = formData;
-      const { data } = await axios.post(
-        "/api/v1/login",
-        {
-            email,
-            password,
-            role
-        },
-        {
-            headers: {
-                "Content-Type": "application/json",
-            },
-            withCredentials: true,
-        }
-    )
-    toast.success("Login Successful ! ");
-    localStorage.setItem('token',data.token);
-    navigate("/super")
-    } catch (error) {
-      console.log(error);
-      toast.error(error.message)
+      toast.success("Login Successful!");
+      localStorage.setItem('token', dummyUser.token);
+  
+      // Redirect based on role
+      switch (formData.role) {
+        case "Super-Admin":
+          navigate("/super");
+          break;
+        case "Admin":
+          navigate("/admin");
+          break;
+        case "Faculty":
+          navigate("/faculty");
+          break;
+        case "Student":
+          navigate("/student");
+          break;
+        default:
+          setError("Invalid role selected.");
+          toast.error("Invalid role!");
+      }
+    } else {
+      setError('Invalid credentials. Please try again.');
+      setSuccess('');
+      toast.error("Invalid credentials!");
     }
   };
+  
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen px-4 py-8">
