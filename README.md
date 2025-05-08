@@ -90,13 +90,9 @@ Educational institutes generate vast amounts of data each year, including academ
 
 
 ## Workflow
-
 <p align="center">
   <img src="workflow.png" alt="Workflow of Lumina" />
 </p>
-
-
-
 
 ## Architecture
 <p align="center">
@@ -105,8 +101,95 @@ Educational institutes generate vast amounts of data each year, including academ
 
   
 </p>
+</div>
+
+<div align="center">
+
+## 📚 Research References
+  
+</div>
+
+
+This repository includes resources and references gathered during the course of exploring topics related to automation, education, spreadsheet reliability, and academic tools.
 
 ---
+
+### 📄 Articles & Reports
+
+### 1. **Spreadsheet Errors in Business**
+- **Title:** *Sorry, Your Spreadsheet Has Errors (Almost 90% Do)*  
+- **Author:** Leung, S.  
+- **Published by:** Forbes – Salesforce BrandVoice  
+- **Date:** September 15, 2014  
+- **Link:** [Read Article](https://www.forbes.com/sites/salesforce/2014/09/13/sorry-spreadsheet-errors/)  
+
+### 2. **Future of Work & Automation**
+- **Title:** *Harnessing Automation for a Future That Works*  
+- **Authors:** Manyika, J., Chui, M., Miremadi, M., Bughin, J., George, K., Willmott, P., & Dewhurst, M.  
+- **Published by:** McKinsey & Company  
+- **Date:** 2017  
+- **Link:** [Read Report](https://www.mckinsey.com/featured-insights/digital-disruption/harnessing-automation-for-a-future-that-works)
+
+### 3. **Historical Perspective on Automation in Education**
+- **Title:** *Automation in Training and Education*  
+- **Authors:** Kearsley, G., & Seidel, R. J.  
+- **Published in:** Human Factors, Volume 27(1), Pages 61–74  
+- **Date:** 1985
+
+---
+
+## 🧠 Tools & Technologies
+
+### 4. **LangChain**
+- **Title:** *Introduction to LangChain*  
+- **Publisher:** LangChain Documentation  
+- **Link:** [Explore LangChain](https://python.langchain.com/v0.2/docs/introduction)
+
+### 5. **IPU Academic Leaderboard**
+- **Repository:** [LakshayGMZ/ipuSenpai](https://github.com/LakshayGMZ/ipuSenpai)  
+- **Description:** A modern, open-source, beautifully designed academic leaderboard for IPU students.  
+- **Author:** LakshayGMZ
+
+---
+
+## 🏛 Institutional Reports
+
+### 6. **College Annual Reports – Lady Shri Ram College**
+- **Link:** [View Reports](https://lsr.edu.in/college-annual-reports/)
+
+### 7. **Indian Institute of Technology – Annual Report**
+- **Title:** *Annual Report 2022–2023*  
+- **Institute:** IIT Delhi  
+- **Link:** [Download Report (PDF)](https://rti.iitd.ac.in/sites/default/files/inst_manuals/AR-2022-23-E.pdf)
+
+---
+
+## ✅ How to Use
+
+This collection serves as foundational material for understanding:
+- The importance of error-free data tools.
+- The role of automation in modern learning.
+- Real-world applications of AI/ML tools like LangChain.
+- Examples of academic transparency and open-source educational tools.
+
+Feel free to fork this repo and build on the research!
+
+---
+
+## 🛠 License
+
+This project uses public resources for educational and non-commercial research purposes. Please refer to individual links and platforms for their respective usage rights and licenses.
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 2. Features 
